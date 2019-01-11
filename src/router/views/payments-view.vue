@@ -1,20 +1,18 @@
 <script>
 import appConfig from '@src/app.config'
 import Layout from '@layouts/main'
-import ViewCSV from './viewCSV'
 
 export default {
-  components: { Layout, ViewCSV },
   page: {
     title: 'Home',
     meta: [{ name: 'description', content: appConfig.description }],
   },
+  components: { Layout },
 }
 </script>
 
 <template>
   <Layout>
-    <img src="@assets/images/britecore-logo.png" alt="Logo" /><br /><br />
-    <ViewCSV />
+    <img src="@assets/images/britecore-logo.png" alt="Logo" />
   </Layout>
 </template>
